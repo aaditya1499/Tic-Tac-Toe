@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context="tictac.aaditya.com.tictactoenew.SinglePlayer">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Tap on any square"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tl"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="29dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2pt"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="2pt"
+                android:background="@color/black"
+                android:onClick="click"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="2pt"
+                android:background="@color/black"
+                android:onClick="click" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:background="@color/black"
+                android:onClick="click" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2pt"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="2pt"
+                android:background="@color/black"
+                android:onClick="click" />
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="2pt"
+                android:background="@color/black"
+                android:onClick="click" />
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:background="@color/black"
+                android:onClick="click" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2pt"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="2pt"
+                android:background="@color/black"
+                android:onClick="click" />
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="2pt"
+                android:background="@color/black"
+                android:onClick="click" />
+
+            <Button
+
+                android:id="@+id/b9"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:background="@color/black"
+                android:onClick="click" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
